@@ -1,0 +1,156 @@
+/* Common styles for both sections */
+.section-container {
+	padding: 4rem 0;
+	background: var(--dark);
+}
+
+.section-header {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.section-header i {
+	color: var(--secondary);
+	font-size: 2.5rem;
+}
+
+.section-title {
+	color: var(--light);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 2.5rem;
+	background: linear-gradient(45deg, var(--light), #9d6fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.timeline-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.timeline-item {
+	background: rgba(242, 244, 247, 0.05);
+	border-radius: 15px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+	transform: translateY(-5px);
+	background: rgba(242, 244, 247, 0.08);
+}
+
+.timeline-date {
+	color: var(--secondary);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+	color: var(--light);
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.timeline-subtitle {
+	color: #a1a1aa;
+	font-size: 1.1rem;
+}
+
+/* Experience specific styles */
+#experience {
+	background: rgb(2, 2, 5, 0.98);
+}
+
+/* Previous styles remain the same until timeline-subtitle */
+
+.timeline-description {
+	margin-top: 1.5rem;
+	color: #a1a1aa;
+}
+
+.description-list {
+	list-style: none;
+	padding-left: 1.5rem;
+}
+
+.description-list li {
+	position: relative;
+	margin-bottom: 0.75rem;
+	line-height: 1.6;
+}
+
+.description-list li::before {
+	content: '';
+	position: absolute;
+	left: -1.5rem;
+	top: 0.5rem;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: var(--secondary);
+}
+
+.timeline-item:hover .description-list li::before {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.section-container {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		padding: 0 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.section-header i {
+		font-size: 2rem;
+	}
+
+	.section-title {
+		font-size: 2rem;
+	}
+
+	.timeline-container {
+		padding: 0 1.5rem;
+	}
+
+	.timeline-item {
+		padding: 1.5rem;
+	}
+
+	.timeline-title {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.description-list {
+		padding-left: 1.25rem;
+	}
+
+	.description-list li {
+		font-size: 0.95rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.description-list li::before {
+		left: -1.25rem;
+		width: 5px;
+		height: 5px;
+	}
+}

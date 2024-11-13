@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Website</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/ticker.css" />
+		<link rel="stylesheet" href="css/works.css" />
+		<link rel="stylesheet" href="css/experienceeducation.css" />
+		<link rel="stylesheet" href="css/certification.css" />
+		<link rel="stylesheet" href="css/skills.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="css/loading-error.css">
+		<script src="js/loading-error.js"></script>
+
+		<style>	
+			/* Particles Container */
+			#particles-js {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Stars Container -->
+		<div class="stars-container">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+		</div>
+		<!-- Main Content Wrapper -->
+		<div class="main-content">
+			<!-- Navbar -->
+			<nav class="navbar">
+				<div class="nav-brand">
+					<a href="#hero">Gratia</a>
+				</div>
+				<div class="nav-links">
+					<a href="#works">My Recent Works</a>
+					<a href="#experience">My Experience</a>
+					<a href="#education">My Education</a>
+					<a href="#certification">My Certification</a>
+					<a href="#skills">My Skills</a>
+				</div>
+			</nav>
+
+			<section id="hero" class="section hero-section">
+				<!-- Particles Container -->
+				<div id="particles-js"></div>
+				<div class="hero-content-wrapper">
+					<div class="hero-content">
+						<div class="hero-left">
+							<h2>I am Gratia</h2>
+							<div class="hero-title">
+								<h1>IT | Logistics | Business</h1>
+							</div>
+							<p class="hero-description">
+								Ambitious student in IT, Logistics, and Business with a 3.94 GPA,
+								skilled in web and mobile development, programming, and AI, with
+								proven leadership as President of the E-Commerce Logistics Student
+								Association and practical experience in national competitions and
+								internships
+							</p>
+							<div class="hero-buttons">
+								<a href="source/CV_Felix-Gratia-Mangatur-Manullang.pdf" class="download-cv" download>
+									<span>Download CV</span>
+									<i class="fas fa-download"></i>
+								</a>
+								<div class="social-icons">
+									<a href="https://wa.me/6282363134083?text=Hi%20Gratia%2C%20I%20saw%20your%20portfolio..." class="social-icon">
+										<i class="fab fa-whatsapp"></i>
+									</a>
+									<a href="https://mail.google.com/mail/?view=cm&fs=1&to=felixmanullang81@gmail.com&su=Let's%20Collaborate&body=Hi%20Gratia%2C%20I%20saw%20your%20portfolio..." class="social-icon">
+										<i class="far fa-envelope"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="hero-right">
+							<div class="profile-image">
+								<img src="source/image/image.jpg" alt="Profile Picture" />
+							</div>
+						</div>
+					</div>
+				</div>				
+			</section>
+
+			<div class="ticker-section">
+				<div class="ticker-track">
+					<div class="ticker-item">
+						<i class="fas fa-graduation-cap"></i>
+						3.94 GPA
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-code"></i>
+						Web & Mobile Development
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-robot"></i>
+						AI & Machine Learning
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-users"></i>
+						Leadership Experience
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-truck-fast"></i>"></i>
+						Logistics
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-briefcase"></i>
+						Internship Experience
+					</div>
+					<div class="ticker-item">
+						<i class="fas fa-chart-line"></i>
+						E-Commerce
+					</div>
+				</div>
+			</div>
+
+			<section id="works" class="section portofolio-section">
+				<h2 class="section-title">My Recent Works</h2>
+
+				<div class="filter-buttons">
+					<button class="filter-btn active" data-filter="all">All</button>
+					<button class="filter-btn" data-filter="Website">Website</button>
+					<button class="filter-btn" data-filter="Innovation">Innovation</button>
+					<button class="filter-btn" data-filter="Mobile Application">Mobile Application</button>
+					<button class="filter-btn" data-filter="Warehouse">3D Warehouse</button>
+					<button class="filter-btn" data-filter="Console Application">Console Application</button>
+				</div>
+
+				<div class="portofolio-grid">
+					<!-- Portofolio items will be populated by JavaScript -->
+				</div>
+			</section>
+
+			<!-- Experience Section -->
+			<section id="experience" class="section section-container">
+				<div class="section-header">
+					<i class="fas fa-medal"></i>
+					<h2 class="section-title">My Experience</h2>
+				</div>
+				<div class="timeline-container">
+					<!-- Experience items will be populated by JavaScript -->
+				</div>
+			</section>
+
+			<!-- Education Section -->
+			<section id="education" class="section section-container">
+				<div class="section-header">
+					<i class="fas fa-graduation-cap"></i>
+					<h2 class="section-title">My Education</h2>
+				</div>
+				<div class="timeline-container">
+					<!-- Education items will be populated by JavaScript -->
+				</div>
+			</section>
+
+			<section id="certification" class="section certification-section">
+				<div class="certification-header">
+					<i class="fas fa-certificate"></i>
+					<h2 class="certification-title">My Certification</h2>
+				</div>
+				<div class="certification-grid">
+					<!-- Certification items will be populated by JavaScript -->
+				</div>
+			</section>
+
+			<section id="skills" class="section skills-section">
+				<div class="skills-header">
+					<h2 class="skills-title">My Skills</h2>
+				</div>
+				<div class="skills-grid">
+					<!-- Skills items will be populated by JavaScript -->
+				</div>
+			</section>
+
+			<footer id="footer" class="section footer-section">
+				<div class="footer-content">
+					<p class="footer-question">Want to start a project?</p>
+					<h2 class="footer-heading">
+						<!-- Will be populated by JavaScript -->
+					</h2>
+					<div class="footer-contact">
+						<a
+							href="https://wa.me/6282363134083?text=Hi%20Gratia%2C%20I%20saw%20your%20portfolio..."
+							class="contact-item"
+							target="_blank"
+						>
+							<i class="fab fa-whatsapp"></i>
+							WhatsApp
+						</a>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=felixmanullang81@gmail.com&su=Let's%20Collaborate&body=Hi%20Gratia%2C%20I%20saw%20your%20portfolio..." class="contact-item">
+							<i class="far fa-envelope"></i>
+							Gmail
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+
+		<!-- Particles.js Library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+		<script src="js/script.js"></script>
+		<script src="js/ticker.js"></script>
+		<script src="js/works.js"></script>
+		<script src="js/experienceeducation.js"></script>
+		<script src="js/certification.js"></script>
+		<script src="js/skills.js"></script>
+		<script src="js/footer.js"></script>
+
+		<script>
+			particlesJS('particles-js', {
+				particles: {
+					number: {
+						value: 80,
+						density: {
+							enable: true,
+							value_area: 800
+						}
+					},
+					color: {
+						value: '#ffffff'
+					},
+					shape: {
+						type: 'circle'
+					},
+					opacity: {
+						value: 0.5,
+						random: false
+					},
+					size: {
+						value: 3,
+						random: true
+					},
+					line_linked: {
+						enable: true,
+						distance: 150,
+						color: '#ffffff',
+						opacity: 0.4,
+						width: 1
+					},
+					move: {
+						enable: true,
+						speed: 2,
+						direction: 'none',
+						random: false,
+						straight: false,
+						out_mode: 'out',
+						bounce: false
+					}
+				},
+				interactivity: {
+					detect_on: 'canvas',
+					events: {
+						onhover: {
+							enable: true,
+							mode: 'grab'
+						},
+						onclick: {
+							enable: true,
+							mode: 'push'
+						},
+						resize: true
+					}
+				},
+				retina_detect: true
+			});
+		</script>
+	</body>
+</html>

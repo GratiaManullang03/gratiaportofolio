@@ -1,0 +1,130 @@
+/* Footer Styles */
+.footer-section {
+	background: var(--dark);
+	padding: 4rem 0;
+	position: relative;
+	overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	text-align: left;
+}
+
+.footer-question {
+	color: var(--light);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	opacity: 0.7;
+}
+
+.footer-heading {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.animated-text {
+	display: inline-block;
+	opacity: 0;
+	transform: translateY(30px);
+}
+
+.animated-text span {
+	display: inline-block;
+	background: linear-gradient(45deg, var(--light) 30%, #9d6fff 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 200%;
+	animation: gradientShift 4s ease infinite;
+}
+
+.footer-contact {
+	display: flex;
+	gap: 2rem;
+	opacity: 0;
+	transform: translateY(20px);
+	animation: slideUp 0.8s ease 1.5s forwards;
+    justify-content: flex-end; 
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem 1.5rem;
+	background: rgba(242, 244, 247, 0.05);
+	border-radius: 50px;
+	color: var(--light);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+	background: var(--secondary);
+	transform: translateY(-3px);
+}
+
+.contact-item i {
+	font-size: 1.2rem;
+}
+
+#footer {
+	background: rgb(2, 2, 5, 0.98);
+}
+
+/* Animations */
+@keyframes slideUp {
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.footer-section {
+		padding: 6rem 0;
+	}
+
+	.footer-content {
+		padding: 0 1.5rem;
+	}
+
+	.footer-heading {
+		font-size: 3rem;
+	}
+
+	.footer-contact {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contact-item {
+		width: fit-content;
+	}
+}
