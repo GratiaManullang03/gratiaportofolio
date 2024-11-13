@@ -133,7 +133,16 @@ $(document).ready(function () {
 	// Close button functionality
 	function closeCarousel() {
 		$('body').removeClass('carousel-active');
-		window.history.replaceState({}, document.title, '#certification');
+		// Dapatkan URL saat ini tanpa query parameter
+		const currentUrl = new URL(window.location.href);
+		currentUrl.search = '';
+	  
+		// Ganti URL dengan URL tanpa query parameter
+		// dan tambahkan hash fragment ke section 'certification'
+		window.history.pushState({}, document.title, `${currentUrl.origin}${currentUrl.pathname}#certification`);
+	  
+		// Secara opsional, gulir ke section 'certification'
+		window.location.hash = 'certification';
 	}
 
 	$('.carousel__close').click(function () {
