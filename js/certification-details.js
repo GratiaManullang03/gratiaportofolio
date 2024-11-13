@@ -133,14 +133,9 @@ $(document).ready(function () {
 	// Close button functionality
 	function closeCarousel() {
 		$('body').removeClass('carousel-active');
-		// Dapatkan URL saat ini tanpa query parameter
-		const currentUrl = new URL(window.location.href);
-		currentUrl.search = '';
-	  
-		// Ganti URL dengan URL tanpa query parameter
-		// dan tambahkan hash fragment ke section 'certification'
-		window.history.pushState({}, document.title, `${currentUrl.origin}${currentUrl.pathname}#certification`);
-	  
+		// Ganti URL ke index.html dengan hash fragment ke section 'certification'
+		window.history.pushState({}, document.title, `${window.location.origin}/#certification`);
+
 		// Secara opsional, gulir ke section 'certification'
 		window.location.hash = 'certification';
 	}
