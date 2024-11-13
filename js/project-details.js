@@ -157,7 +157,7 @@ $(document).ready(function () {
 	// Function to close carousel and return to portfolio
 	function closeCarousel() {
 		$('body').removeClass('carousel-active');
-		window.location.href = 'index.html#works';
+		window.history.replaceState({}, document.title, '#works');
 	}
 
 	// Close button click handler
