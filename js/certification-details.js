@@ -133,11 +133,7 @@ $(document).ready(function () {
 	// Close button functionality
 	function closeCarousel() {
 		$('body').removeClass('carousel-active');
-		// Ganti URL ke index.html dengan hash fragment ke section 'certification'
-		window.history.pushState({}, document.title, `${window.location.origin}/gratiaportofolio/#certification`);
-
-		// Secara opsional, gulir ke section 'certification'
-		window.location.hash = 'certification';
+		window.location.href = 'index.html#certification';
 	}
 
 	$('.carousel__close').click(function () {
