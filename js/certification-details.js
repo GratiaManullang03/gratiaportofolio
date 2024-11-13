@@ -133,7 +133,7 @@ $(document).ready(function () {
 	// Close button functionality
 	function closeCarousel() {
 		$('body').removeClass('carousel-active');
-		window.location.href = 'portofolio.html#certification';
+		window.location.href = 'index.html#certification';
 	}
 
 	$('.carousel__close').click(function () {
