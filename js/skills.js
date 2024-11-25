@@ -7,14 +7,14 @@ $(document).ready(function() {
             class: "python"
         },
         {
-            name: "RStudio",
-            icon: "source/image/skills/r.png",
-            class: "rstudio"
+            name: "C++",
+            icon: "source/image/skills/c++.png",
+            class: "mongodb"
         },
         {
-            name: "SketchUp",
-            icon: "source/image/skills/sketch-up.png",
-            class: "sktechup"
+            name: "C",
+            icon: "source/image/skills/c.png",
+            class: "flexsim"
         },
         {
             name: "C#",
@@ -32,14 +32,14 @@ $(document).ready(function() {
             class: "javascript"
         },
         {
-            name: "IBM SPSS",
-            icon: "source/image/skills/ibm-spss.png",
-            class: "ibmspss"
+            name: "React JS",
+            icon: "source/image/skills/reactjs.png",
+            class: "laravel"
         },
         {
-            name: "Odoo",
-            icon: "source/image/skills/odoo.png",
-            class: "odoo"
+            name: "PHP",
+            icon: "source/image/skills/php.png",
+            class: "mongodb"
         },
         {
             name: "Flutter",
@@ -50,12 +50,42 @@ $(document).ready(function() {
             name: "Laravel",
             icon: "source/image/skills/laravel.png",
             class: "laravel"
+        },        
+        {
+            name: "Frappe",
+            icon: "source/image/skills/frappe.png",
+            class: "laravel"
+        },        
+        {
+            name: "Visual Studio",
+            icon: "source/image/skills/visual-studio.png",
+            class: "flexsim"
         },
         {
             name: "MongoDB",
             icon: "source/image/skills/mongodb.png",
             class: "mongodb"
         },
+        {
+            name: "RStudio",
+            icon: "source/image/skills/r.png",
+            class: "rstudio"
+        },      
+        {
+            name: "IBM SPSS",
+            icon: "source/image/skills/ibm-spss.png",
+            class: "ibmspss"
+        },
+        {
+            name: "Odoo",
+            icon: "source/image/skills/odoo.png",
+            class: "odoo"
+        },
+        {
+            name: "SketchUp",
+            icon: "source/image/skills/sketch-up.png",
+            class: "sktechup"
+        },  
         {
             name: "Flexsim",
             icon: "source/image/skills/flexsim.png",
